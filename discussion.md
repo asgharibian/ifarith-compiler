@@ -30,12 +30,14 @@ compile ir-virtual files like so:
 After working on the project with my group mate, we noticed several pros and cons when implementing our code. One common advantage we found is that IR-virtual is easier to read than assembly. Understanding basic things such as arithmetic in assembly isn’t intuitive. However, a con that my group mate and I agree upon is that test cases are harder to implement. In previous personal and class projects, our test cases have been in Python, which is a standard language and easier to understand. Another con that we have encountered is that running the program isn’t straightforward. We have to go through multiple steps to print a result. Finally, one last pro my group and I agree upon is that IR-virtual is way more intuitive to implement, even though producing test cases is harder. Implementing the physical code isn’t as challenging.
 
 hundred.irv: ((mov-lit r0 100) (print r0))
+
 my_sum.irv: ((mov-lit r0 10)
   (mov-lit r1 20)
   (mov-lit r2 0)
   (add r2 r1)
   (add r2 r0)
   (print r2))
+  
 minus.irv: ((mov-lit r0 20)
   (mov-lit r1 10)
   (mov-lit r2 0)
